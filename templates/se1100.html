@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %} 
+{% block title%} Samsung E1100 {% endblock%}
+{% block content %}
+    <style>
+      body {
+        background-color: pink;
+      }
+    </style>
+    <link rel="stylesheet" href="{% static 'css/se1100.css' %}">
+      <div id="card13" class="card mx-auto" style="width: 18rem;">
+        <img id="cardimage13" src="{% static 'images/samsung-e1100.jpg' %}" class="card-img-top" alt="Samsung E1100">
+        <div class="card-body">
+          <h5 class="card-title">Samsung E1100</h5>
+          <p class="card-text">Released : June 2009</p>
+          <p class="card-text">Resolution : 128x128 pixels</p>
+          <p class="card-text">ROM : 1 MB</p>
+          <p class="card-text">Network : GSM</p>
+          <a href="{% url 'home' %}" class="btn btn-primary" style="margin-left: 140px;">Main Page</a>
+        </div>
+      </div>
+
+      <div class="mainfooter" style="margin-top: 54px;">
+        <p id="textfooter1">Email : gjikakevin@gmail.com</p>
+        <p id="textfooter2">Contact : +355 69 58 00 413</p>
+        <p id="textfooter3">Created by : Kevin Gjika</p>
+      </div>
+      {% endblock %}

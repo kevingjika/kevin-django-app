@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends 'index.html'%}
+{% block title%} Contact Us {% endblock%}
+{% load static %}
+{% block content %}
+<style>
+  body {
+    background-color: pink;
+  }
+</style>
+<div class="container mb-5">
+  <div class="row mt-5">
+      {% if messages %}
+      {% for message in messages %}
+      <div {% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}  role="alert">
+          {{ message }}
+        </div>
+{% endfor %}
+</ul>
+{% endif %}
+      <div class="col-12 col-md-6 bg-light">
+          <form method="POST" class="p-5">
+              
+              {% csrf_token %}
+              <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" name="firstName" class="form-control" id="name" placeholder="Your name">
+              </div>
+              <div class="mb-3">
+                  <label for="surname" class="form-label">Surname</label>
+                  <input type="text" name="lastName" class="form-control" id="surname" placeholder="Your surname">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" name="email" class="form-control" id="email" placeholder="namesurname@example.com">
+              </div>
+              <div class="mb-3">
+                  <label for="comment" class="form-label">Comment</label>
+                  <textarea class="form-control" name="sms" id="comment" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark text-light">Submit</button>
+          </form>
+      </div>
+      <div class="col-12 col-md-6">
+          <img src="{% static 'images/pixeltrue-contact-me.png' %}" class="img-fluid" alt="">
+      </div>
+  </div>
+</div>
+
+<div class="mainfooter">
+    <p id="textfooter1">Email : gjikakevin@gmail.com</p>
+    <p id="textfooter2">Contact : +355 69 58 00 413</p>
+    <p id="textfooter3">Created by : Kevin Gjika</p>
+  </div>
+
+{% endblock %}

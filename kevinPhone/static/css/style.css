@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainfooter {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    text-align: center; 
+    display: flex;
+    padding-top: 13px;
+    margin-bottom: -890px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+}
+
+#iphone {
+    margin-left: 5px;
+    text-align: center;
+}
+
+#samsung {
+    margin-left: 5px;
+    text-align: center;
+}
+
+#image1 {
+    margin-top: 59px;
+    margin-left: 325px;
+}
+
+#image2 {
+    margin-top: 59px;
+    margin-left: 325px;
+}
+
+#image3 {
+    margin-top: 59px;
+    margin-left: 325px;
+}
+
+#ip11 {
+    margin-top: 5px;
+    margin-left: 600.5px;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+#ip12 {
+    margin-top: 5px;
+    margin-left: 600.5px;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+#ip13 {
+    margin-top: 5px;
+    margin-left: 600.5px;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+#card1 {
+    width: 18rem;
+    margin-top: 69px;
+    margin-left: 36px;
+}
+
+#card2 {
+    width: 18rem;
+    margin-top: -381px;
+    margin-left: 536px;
+}
+
+#card3 {
+    width: 18rem;
+    margin-top: -381px;
+    margin-left: 1026px;
+}
+
+#card4 {
+    width: 18rem;
+    margin-top: 20px;
+    margin-left: 36px;
+}
+
+#card5 {
+    width: 18rem;
+    margin-top: -381px;
+    margin-left: 537px;
+}
+
+#card6 {
+    width: 18rem;
+    margin-top: -381px;
+    margin-left: 1026px;
+}
+
+#cardimage1 {
+    height: 178px;
+    object-fit: contain;
+    margin-top: 19px;
+}
+
+#cardimage2 {
+    height: 178px;
+    object-fit: contain;
+    margin-top: 19px;
+}
+
+#cardimage3 {
+    height: 178px;
+    object-fit: contain;
+    margin-top: 19px;
+}
+
+#cardimage4 {
+    height: 178px;
+    object-fit: contain;
+    margin-top: 19px;
+}
+
+#cardimage5 {
+    height: 178px;
+    object-fit: contain;
+    margin-top: 19px;
+}
+
+#cardimage6 {
+    height: 178px;
+    object-fit: contain;
+    margin-top: 19px;
+}
+
+#textfooter1 {
+    margin-left: 23px;
+    margin-top: 1px;
+}
+
+#textfooter2 {
+    margin-left: 370px;
+    margin-top: 1px;
+}
+
+#textfooter3 {
+    margin-left: 355px;
+    margin-top: 1px;
+}

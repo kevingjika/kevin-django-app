@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %} 
+{% block title%} Samsung Galaxy A12 {% endblock%}
+{% block content %}
+    <style>
+      body {
+        background-color: pink;
+      }
+    </style>
+    <link rel="stylesheet" href="{% static 'css/sga12.css' %}">
+      <div id="card14" class="card mx-auto" style="width: 18rem;">
+        <img id="cardimage14" src="{% static 'images/samsung-galaxy-a12-sm-a125.jpg' %}" class="card-img-top" alt="Samsung Galaxy A12">
+        <div class="card-body">
+          <h5 class="card-title">Samsung Galaxy A12</h5>
+          <p class="card-text">Released : 21 December 2020</p>
+          <p class="card-text">Resolution : 720x1600 pixels</p>
+          <p class="card-text">RAM : 2/6 GB</p>
+          <p class="card-text">Network : GSM / HSPA / LTE</p>
+          <a href="{% url 'home' %}" class="btn btn-primary" style="margin-left: 140px;">Main Page</a>
+        </div>
+      </div>
+
+      <div class="mainfooter" style="margin-top: 54px;">
+        <p id="textfooter1">Email : gjikakevin@gmail.com</p>
+        <p id="textfooter2">Contact : +355 69 58 00 413</p>
+        <p id="textfooter3">Created by : Kevin Gjika</p>
+      </div>
+      {% endblock %}

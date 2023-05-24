@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% extends 'index.html' %} 
+{% load static %} 
+{% block title%} Home {% endblock%}
+{% block content %}
+<style>
+  body {
+    background-color: pink;
+  }
+</style>
+<p style="font-size: 23px; margin-top: 70px; text-align: center;">Hello and welcome to Kevin Phone website! For more information about each phone presented on this page, click Learn more.</p>
+<div id="card1" class="card" style="width: 18rem;">
+    <img id="cardimage1" src="../static/images/apple-iphone-11.jpg" class="card-img-top" alt="iPhone 11">
+    <div class="card-body">
+      <h5 class="card-title">iPhone 11</h5>
+      <p class="card-text">499$ for the 64 GB model</p>
+      <p class="card-text">549$ for the 128 GB model</p>
+      <a href="{% url 'iphone11' %}" class="btn btn-primary" style="margin-left: 140px;">Learn more</a>
+    </div>
+  </div>
+
+  <div id="card2" class="card" style="width: 18rem;">
+    <img id="cardimage2" src="../static/images/apple-iphone-12.jpg" class="card-img-top" alt="iPhone 12">
+    <div class="card-body">
+      <h5 class="card-title">iPhone 12</h5>
+      <p class="card-text">599$ for the 64 GB model</p>
+      <p class="card-text">649$ for the 128 GB model</p>
+      <a href="{% url 'iphone12' %}" class="btn btn-primary" style="margin-left: 140px;">Learn more</a>
+    </div>
+  </div>
+
+  <div id="card3" class="card" style="width: 18rem;">
+    <img id="cardimage3" src="../static/images/apple-iphone-13.jpg" class="card-img-top" alt="iPhone 13">
+    <div class="card-body">
+      <h5 class="card-title">iPhone 13</h5>
+      <p class="card-text">699$ for the 128 GB model</p>
+      <p class="card-text">749$ for the 256 GB model</p>
+      <a href="{% url 'iphone13' %}" class="btn btn-primary" style="margin-left: 140px;">Learn more</a>
+    </div>
+  </div>
+
+  <div id="card4" class="card" style="width: 18rem;">
+    <img id="cardimage4" src="../static/images/samsung-galaxy-s6.jpg" class="card-img-top" alt="Samsung Galaxy S6">
+    <div class="card-body">
+      <h5 class="card-title">Samsung Galaxy S6</h5>
+      <p class="card-text">326$ for the 32 GB model</p>
+      <p class="card-text">212$ for the 64 GB model</p>
+      <a href="{% url 'sgs6' %}" class="btn btn-primary" style="margin-left: 140px;">Learn more</a>
+    </div>
+  </div>
+
+  <div id="card5" class="card" style="width: 18rem;">
+    <img id="cardimage5" src="../static/images/samsung-galaxy-s6-edge.jpg" class="card-img-top" alt="Samsung Galaxy S6 Edge">
+    <div class="card-body">
+      <h5 class="card-title">Samsung Galaxy S6 Edge</h5>
+      <p class="card-text">779$ for the 32 GB model</p>
+      <p class="card-text">959$ for the 128 GB model</p>
+      <a href="{% url 'sgs6e' %}" class="btn btn-primary" style="margin-left: 140px;">Learn more</a>
+    </div>
+  </div>
+
+  <div id="card6" class="card" style="width: 18rem;">
+    <img id="cardimage6" src="../static/images/samsung-galaxy-s6-edge-plus.jpg" class="card-img-top" alt="Samsung Galaxy S6 Edge +">
+    <div class="card-body">
+      <h5 class="card-title">Samsung Galaxy S6 Edge +</h5>
+      <p class="card-text">768$ for the 32 GB model</p>
+      <p class="card-text">864$ for the 64 GB model</p>
+      <a href="{% url 'sgs6ep' %}" class="btn btn-primary" style="margin-left: 140px;">Learn more</a>
+    </div>
+  </div>
+  
+  <button type="button" id="buttonofquote" class="btn btn-dark" data-bs-toggle="popover" data-bs-title="Dr. Christopher Dayagdag" data-bs-content="Website without visitors is like a ship lost in the horizon." data-bs-placement="left" style="margin-left: 1219px; margin-top: 60px; color: white;">Quote</button>
+  <button id="ontopofthepage" class="btn btn-success" style="margin-left: 1229px; margin-top: 21px;"><a href="#top" style="text-decoration: none; color: white;">Top</a></button>
+  
+  <div class="mainfooter" style="margin-top: 35px;">
+    <p id="textfooter1">Email : gjikakevin@gmail.com</p>
+    <p id="textfooter2">Contact : +355 69 58 00 413</p>
+    <p id="textfooter3">Created by : Kevin Gjika</p>
+  </div>
+{% endblock%}

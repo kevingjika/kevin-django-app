@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#card16 {
+    width: 18rem;
+    margin-top: 30px;
+    margin-left: 36px;
+}
+
+#cardimage16 {
+    height: 178px;
+    object-fit: contain;
+    margin-top: 19px;
+}

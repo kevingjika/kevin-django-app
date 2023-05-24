@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %} 
+{% block title%} Samsung Galaxy S22 Ultra {% endblock%}
+{% block content %}
+    <style>
+      body {
+        background-color: pink;
+      }
+    </style>
+    <link rel="stylesheet" href="{% static 'css/sgs22ultra.css' %}">
+      <div id="card18" class="card mx-auto" style="width: 18rem;">
+        <img id="cardimage18" src="{% static 'images/samsung-galaxy-s22-ultra-5g.jpg' %}" class="card-img-top" alt="Samsung Galaxy S22 Ultra">
+        <div class="card-body">
+          <h5 class="card-title">Samsung Galaxy S22 Ultra</h5>
+          <p class="card-text">Released : 25 February 2022</p>
+          <p class="card-text">Resolution : 1440x3088 pixels</p>
+          <p class="card-text">RAM : 8/12 GB </p>
+          <p class="card-text">Network : GSM / CDMA / HSPA / EVDO / LTE / 5G</p>
+          <a href="{% url 'home' %}" class="btn btn-primary" style="margin-left: 140px;">Main Page</a>
+        </div>
+      </div>
+
+      <div class="mainfooter" style="margin-top: 30px;">
+        <p id="textfooter1">Email : gjikakevin@gmail.com</p>
+        <p id="textfooter2">Contact : +355 69 58 00 413</p>
+        <p id="textfooter3">Created by : Kevin Gjika</p>
+      </div>
+      {% endblock %}

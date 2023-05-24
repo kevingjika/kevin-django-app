@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %} 
+{% block title%} iPhone 6 {% endblock%}
+{% block content %}
+<style>
+  body {
+    background-color: pink;
+  }
+</style>
+<link rel="stylesheet" href="{% static 'css/iphone6plus.css' %}">
+      <div id="card8" class="card mx-auto" style="width: 18rem;">
+        <img id="cardimage8" src="{% static 'images/apple-iphone-6-plus2.jpg' %}" class="card-img-top" alt="iPhone 6 Plus">
+        <div class="card-body">
+          <h5 class="card-title">iPhone 6 Plus</h5>
+          <p class="card-text">Released : 19 September 2014</p>
+          <p class="card-text">Resolution : 1080x1920 pixels</p>
+          <p class="card-text">RAM : 1 GB</p>
+          <p class="card-text">Network : GSM / CDMA / HSPA / EVDO / LTE</p>
+          <a href="{% url 'home' %}" class="btn btn-primary" style="margin-left: 140px;">Main Page</a>
+        </div>
+      </div>
+
+      <div class="mainfooter" style="margin-top: 30px;">
+        <p id="textfooter1">Email : gjikakevin@gmail.com</p>
+        <p id="textfooter2">Contact : +355 69 58 00 413</p>
+        <p id="textfooter3">Created by : Kevin Gjika</p>
+      </div>
+      {% endblock %}

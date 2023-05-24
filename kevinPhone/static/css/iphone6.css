@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#card7 {
+    width: 18rem;
+    margin-top: 30px;
+    margin-left: 36px;
+}
+
+#cardimage7 {
+    height: 178px;
+    object-fit: contain;
+    margin-top: 19px;
+}

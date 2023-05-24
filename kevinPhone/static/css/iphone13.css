@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#card11 {
+    width: 18rem;
+    margin-top: 30px;
+    margin-left: 36px;
+}
+
+#cardimage11 {
+    height: 178px;
+    object-fit: contain;
+    margin-top: 19px;
+}
